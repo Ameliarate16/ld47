@@ -3,11 +3,11 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define p = Character("Protag")
-define t = Character("Target")
-define b = Character("Beau")
-define fa = Character("Friend A")
-define fb = Character("Friend B")
+define p = Character("Protag", color="cc0000")
+define t = Character("Target", color="ff66ee")
+define b = Character("Beau", color="0000cc")
+define fa = Character("Friend A", color="00cc00")
+define fb = Character("Friend B", color="f0f000")
 
 
 # The game starts here.
