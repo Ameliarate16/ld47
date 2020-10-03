@@ -3,7 +3,11 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define p = Character("Protag")
+define t = Character("Target")
+define b = Character("Beau")
+define fa = Character("Friend A")
+define fb = Character("Friend B")
 
 
 # The game starts here.
@@ -14,20 +18,41 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    # scene bg room
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    # show eileen happy
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    # e "You've created a new Ren'Py game."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    # e "Once you add a story, pictures, and music, you can release it to the world!"
 
     # This ends the game.
+
+
+
+    ##scene bg black
+
+    fb "Wake up, sleepyhead."
+    
+    p "Hmm?"
+
+    ##scene bg car
+
+    ##show friend a excited
+    fa "We’re here. Camping awaits."
+    
+    p "{i}Yawn{/i}"
+    
+    ##show target happy
+    t "Thanks for driving us all here, Beau!"
+    
+    ##show beau happy
+    b "It’s no worries, I like driving. Especially with you all here coming along."
 
     return
